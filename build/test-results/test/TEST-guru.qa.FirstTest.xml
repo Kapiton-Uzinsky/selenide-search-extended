@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="guru.qa.FirstTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-07-05T14:23:49" hostname="DESKTOP-MJT5R41" time="0.02">
+  <properties/>
+  <testcase name="firstTest()" classname="guru.qa.FirstTest" time="0.018"/>
+  <testcase name="secondTest()" classname="guru.qa.FirstTest" time="0.001"/>
+  <system-out><![CDATA[this is before all method!
+this is before each method!
+this is the first @test!
+this is after each method!
+this is before each method!
+this is the second @test!
+this is after each method!
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
