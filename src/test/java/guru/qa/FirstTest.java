@@ -5,13 +5,13 @@ import org.junit.jupiter.api.*;
 public class FirstTest {
 
     @BeforeAll
-    static void beforeAll(){
+    static void beforeAll() {
         System.out.println("this is before all method!");
     }
 
     @BeforeEach
     void setUp() {
-     System.out.println("this is before each method!");
+        System.out.println("this is before each method!");
     }
 
     @AfterEach
