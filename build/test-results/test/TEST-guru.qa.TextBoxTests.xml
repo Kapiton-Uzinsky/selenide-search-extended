@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="guru.qa.TextBoxTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-07-10T19:23:56" hostname="DESKTOP-MJT5R41" time="11.249">
+<testsuite name="guru.qa.TextBoxTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2021-07-10T19:35:47" hostname="DESKTOP-MJT5R41" time="12.606">
   <properties/>
-  <testcase name="positiveFillTest()" classname="guru.qa.TextBoxTests" time="11.249">
-    <failure message="Element should be visible or transparent: visible or have css value opacity=0 {#react-select-3-input}&#13;&#10;Element: '&lt;input aria-autocomplete=&quot;list&quot; autocapitalize=&quot;none&quot; autocomplete=&quot;off&quot; autocorrect=&quot;off&quot; id=&quot;react-select-3-input&quot; spellcheck=&quot;false&quot; tabindex=&quot;0&quot; type=&quot;text&quot; value displayed:false&gt;&lt;/input&gt;'&#13;&#10;Actual value: visible:false, 1&#13;&#10;Screenshot: file:/C:/Users/Admin/IdeaProjects/selenide-search-extended/build/reports/tests/1625945047770.0.png&#13;&#10;Page source: file:/C:/Users/Admin/IdeaProjects/selenide-search-extended/build/reports/tests/1625945047770.0.html&#13;&#10;Timeout: 4 s." type="com.codeborne.selenide.ex.ElementShould">Element should be visible or transparent: visible or have css value opacity=0 {#react-select-3-input}
+  <testcase name="positiveFillTest()" classname="guru.qa.TextBoxTests" time="12.606">
+    <failure message="Element should be visible or transparent: visible or have css value opacity=0 {#react-select-3-input}&#13;&#10;Element: '&lt;input aria-autocomplete=&quot;list&quot; autocapitalize=&quot;none&quot; autocomplete=&quot;off&quot; autocorrect=&quot;off&quot; id=&quot;react-select-3-input&quot; spellcheck=&quot;false&quot; tabindex=&quot;0&quot; type=&quot;text&quot; value displayed:false&gt;&lt;/input&gt;'&#13;&#10;Actual value: visible:false, 1&#13;&#10;Screenshot: file:/C:/Users/Admin/IdeaProjects/selenide-search-extended/build/reports/tests/1625945760161.0.png&#13;&#10;Page source: file:/C:/Users/Admin/IdeaProjects/selenide-search-extended/build/reports/tests/1625945760161.0.html&#13;&#10;Timeout: 4 s." type="com.codeborne.selenide.ex.ElementShould">Element should be visible or transparent: visible or have css value opacity=0 {#react-select-3-input}
 Element: '&lt;input aria-autocomplete=&quot;list&quot; autocapitalize=&quot;none&quot; autocomplete=&quot;off&quot; autocorrect=&quot;off&quot; id=&quot;react-select-3-input&quot; spellcheck=&quot;false&quot; tabindex=&quot;0&quot; type=&quot;text&quot; value displayed:false&gt;&lt;/input&gt;'
 Actual value: visible:false, 1
-Screenshot: file:/C:/Users/Admin/IdeaProjects/selenide-search-extended/build/reports/tests/1625945047770.0.png
-Page source: file:/C:/Users/Admin/IdeaProjects/selenide-search-extended/build/reports/tests/1625945047770.0.html
+Screenshot: file:/C:/Users/Admin/IdeaProjects/selenide-search-extended/build/reports/tests/1625945760161.0.png
+Page source: file:/C:/Users/Admin/IdeaProjects/selenide-search-extended/build/reports/tests/1625945760161.0.html
 Timeout: 4 s.
 	at com.codeborne.selenide.impl.WebElementSource.checkCondition(WebElementSource.java:121)
 	at com.codeborne.selenide.impl.WebElementSource.findAndAssertElementIsInteractable(WebElementSource.java:139)
@@ -113,11 +113,11 @@ Timeout: 4 s.
   <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 29137
+Starting ChromeDriver 91.0.4472.101 (af52a90bf87030dd1523486a1cd3ae25c5d76c9b-refs/branch-heads/4472@{#1462}) on port 37589
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-июл 11, 2021 12:23:59 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+июл 11, 2021 12:35:50 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>
