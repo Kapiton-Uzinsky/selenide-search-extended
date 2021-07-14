@@ -4,8 +4,6 @@ import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import java.io.File;
-
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
@@ -16,11 +14,14 @@ public class TextBoxTests {
     static void setup() {
 
         Configuration.baseUrl = "https://demoqa.com";
+        Configuration.startMaximized = true;
     }
 
     @Test
     void positiveFillTest() {
         open("/automation-practice-form");
+        $(".practice-form-wrapper").shouldHave(text("Student Registration Form"));
+
         $("#firstName").setValue("Vasiliy");
         $("#lastName").setValue("Ivanov");
         $("#userEmail").setValue("vasya@gmail.uk");
@@ -30,26 +31,25 @@ public class TextBoxTests {
         $(".react-datepicker__month-select").selectOption("August");
         $(".react-datepicker__year-select").selectOption("1992");
         $((".react-datepicker__day--021")).click();
-        $("#subjectsInput").setValue("QA testing");
+        $("#subjectsInput").val("Math").pressEnter();
         $("#hobbiesWrapper").$(byText("Sports")).click();
         $("#hobbiesWrapper").$(byText("Music")).click();
-        $("#uploadPicture").uploadFile(new File("src/test/resources/scale_1200.jpg"));
-        $("#subjectsInput").setValue("QA testing").pressEnter();
-        $("#currentAddress").setValue("address");
+        $("#uploadPicture").uploadFromClasspath("./img/1.png");
+        $("#currentAddress").val("ulica lenina");
         $("#react-select-3-input").setValue("NCR").pressEnter();
         $("#react-select-4-input").setValue("Delhi").pressEnter();
         $("#submit").scrollTo().click();
 
-        $("#example-modal-sizes-title-lg").shouldHave(text("Thanks for submitting the form"));
+        $(".modal-title").shouldHave(text("Thanks for submitting the form"));
         $(".table-responsive").shouldHave(
                 text("Vasiliy Ivanov"),
                 text("vasya@gmail.uk"),
                 text("Male"),
                 text("0102030102"),
                 text("21 August,1992"),
-                text("QA testing"),
+                text("Math"),
                 text("Sports, Music"),
-                text("scale_1200.jpg"),
+                text("1.png"),
                 text("address"),
                 text("NCR Delhi"));
 
