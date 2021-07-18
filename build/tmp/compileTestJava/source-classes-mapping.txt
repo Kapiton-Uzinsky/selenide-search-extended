@@ -1,6 +1,0 @@
-guru/qa/FirstTest.java
- guru.qa.FirstTest
-guru/qa/SearchTests.java
- guru.qa.SearchTests
-guru/qa/TextBoxTests.java
- guru.qa.TextBoxTests
